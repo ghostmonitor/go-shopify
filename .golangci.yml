@@ -1,0 +1,107 @@
+run:
+    timeout: 5m
+
+service:
+  golangci-lint-version: 1.44.2
+
+linters:
+  disable-all: true
+  enable:
+    - deadcode
+    - errcheck
+    - govet
+    - ineffassign
+    - staticcheck # also includes gosimple and unused
+    - structcheck
+    - varcheck
+    - bodyclose
+    - dogsled
+    - dupl
+    - errorlint
+    - exhaustive
+    - exportloopref
+    - forbidigo
+    - funlen
+    - gochecknoinits
+    - gocognit
+    - goconst
+    - gocritic
+    - gocyclo
+    - godot
+    - gofumpt
+    - goimports # Goimports does everything that gofmt does. Additionally it checks unused imports
+    - gomnd
+    - gosec
+    - interfacer
+    - lll
+    - maligned
+    - misspell
+    - nestif
+    - nlreturn
+    - noctx
+    - prealloc
+    - predeclared
+    - thelper
+    - unconvert
+    - unparam
+    - wrapcheck
+    - wsl
+
+linters-settings:
+  forbidigo:
+    forbid:
+      - fmt.Errorf # consider errors.Errorf in github.com/pkg/errors
+      - fmt.Print.* # use a logger instead
+  gocritic:
+    enabled-tags:
+      - diagnostic
+      - experimental
+      - opinionated
+      - performance
+      - style
+    disabled-checks:
+      - dupImport # https://github.com/go-critic/go-critic/issues/845
+      - whyNoLint
+      - paramTypeCombine
+
+  goimports:
+    local-prefixes: github.com/ghostmonitor/go-shopify
+
+  funlen:
+    lines: 90
+    statements: 60
+
+issues:
+  # 0 to disable it. This way it will show all the errors at once and don't have to wait for another build
+  max-issues-per-linter: 0
+
+  # 0 to disable it. This way it will show all the errors at once and don't have to wait for another build
+  max-same-issues: 0
+
+  # Excluding configuration per-path, per-linter, per-text and per-source
+  exclude-rules:
+    # Exclude some linters from running on tests files.
+    - path: _test\.go
+      linters:
+        - gocyclo
+        - errcheck
+        - dupl
+        - gosec
+        - lll
+        - gocritic
+        - gomnd
+        - interfacer
+        - funlen
+        - wrapcheck
+    - path: test/
+      linters:
+        - gocyclo
+        - errcheck
+        - dupl
+        - gosec
+        - lll
+        - gocritic
+        - gomnd
+        - interfacer
+        - funlen
+        - wrapcheck
