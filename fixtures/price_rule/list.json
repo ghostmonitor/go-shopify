@@ -8,7 +8,7 @@
       "target_type": "line_item",
       "target_selection": "all",
       "allocation_method": "across",
-      "allocation_limit": null,
+      "allocation_limit": 3,
       "once_per_customer": false,
       "usage_limit": null,
       "starts_at": "2020-07-05T22:40:32-04:00",
