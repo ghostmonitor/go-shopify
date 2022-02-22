@@ -1,0 +1,6 @@
+# - name: app_lint
+#   service: app
+#   command: make lint
+- name: app_test
+  service: app
+  command: make test
