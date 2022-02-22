@@ -1,0 +1,20 @@
+name: reviewdog
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+jobs:
+  golangci-lint:
+    name: runner / golangci-lint
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' && github.actor != 'dependabot-preview[bot]' && github.actor != 'dependabot-preview' }}
+    steps:
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@v2
+      - name: Configure git for private modules
+        env:
+          TOKEN: ${{ secrets.REVIEWDOG_TOKEN }}
+        run: git config --global url."https://${TOKEN}@github.com".insteadOf "https://github.com"
+      - name: golangci-lint
+        uses: reviewdog/action-golangci-lint@v2
