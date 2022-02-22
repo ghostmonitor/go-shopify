@@ -1,0 +1,17 @@
+# This file is automatically updated when a change is pushed to ghostmonitor/github-config
+
+version: 2
+
+updates:
+  - package-ecosystem: gomod
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "03:00"
+      timezone: Europe/Budapest
+    open-pull-requests-limit: 15
+    target-branch: master
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+
