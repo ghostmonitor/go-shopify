@@ -7,7 +7,28 @@ import (
 	"github.com/shopspring/decimal"
 )
 
-const priceRulesBasePath = "price_rules"
+const (
+	priceRulesBasePath = "price_rules"
+
+	// PriceRuleValueTypeFixedAmount - Applies a discount of `value` as a unit of the store's currency.
+	PriceRuleValueTypeFixedAmount = "fixed_amount"
+
+	// PriceRuleValueTypePercentage - Applies a percentage discount of `value`.
+	PriceRuleValueTypePercentage = "percentage"
+
+	// PriceRuleTargetTypeLineItem - The price rule applies to the cart's line items.
+	PriceRuleTargetTypeLineItem = "line_item"
+
+	// PriceRuleTargetTypeShippingLine - The price rule applies to the cart's shipping lines.
+	PriceRuleTargetTypeShippingLine = "shipping_line"
+
+	// PriceRuleAllocationMethodEach - The discount is applied to each of the entitled items.
+	// When TargetType is "shipping_line", then AllocationMethod must be "each".
+	PriceRuleAllocationMethodEach = "each"
+
+	// PriceRuleAllocationMethodAcross - The calculated discount amount will be applied across the entitled items.
+	PriceRuleAllocationMethodAcross = "across"
+)
 
 // PriceRuleService is an interface for interfacing with the price rule endpoints
 // of the Shopify API.
