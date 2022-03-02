@@ -5,7 +5,13 @@ import (
 	"time"
 )
 
-const discountCodeBasePath = "price_rules/%d/discount_codes"
+const (
+	discountCodeBasePath = "price_rules/%d/discount_codes"
+
+	DiscountCodeCreationJobStatusQueued    = "queued"
+	DiscountCodeCreationJobStatusRunning   = "running"
+	DiscountCodeCreationJobStatusCompleted = "completed"
+)
 
 // DiscountCodeService is an interface for interfacing with the discount endpoints
 // of the Shopify API.
@@ -42,6 +48,41 @@ type DiscountCodesResource struct {
 // DiscountCodeResource represents the result from the discount_codes/X.json endpoint
 type DiscountCodeResource struct {
 	PriceRuleDiscountCode *PriceRuleDiscountCode `json:"discount_code"`
+}
+
+type DiscountCodeCreationJobRequest struct {
+	DiscountCodes []*DiscountCodeCreationJobDiscountCode `json:"discount_codes"`
+}
+
+type DiscountCodeCreationJobResponse struct {
+	DiscountCodeCreationJob *DiscountCodeCreationJob `json:"discount_code_creation"`
+}
+
+type DiscountCodeCreationJobDiscountCodesResponse struct {
+	DiscountCodes []*DiscountCodeCreationJobDiscountCode `json:"discount_codes"`
+}
+
+type DiscountCodeCreationJobDiscountCode struct {
+	ID     int64               `json:"id,omitempty"`
+	Code   string              `json:"code,omitempty"`
+	Errors map[string][]string `json:"errors,omitempty"`
+}
+
+type DiscountCodeCreationDiscountCodeError struct {
+	Code []string `json:"code"`
+}
+
+type DiscountCodeCreationJob struct {
+	ID            int64     `json:"id"`
+	PriceRuleID   int64     `json:"price_rule_id"`
+	StartedAt     time.Time `json:"started_at"`
+	CompletedAt   time.Time `json:"completed_at"`
+	CreatedAt     time.Time `json:"created_at"`
+	UpdatedAt     time.Time `json:"updated_at"`
+	Status        string    `json:"status"`
+	CodesCount    uint8     `json:"codes_count"`
+	ImportedCount uint8     `json:"imported_count"`
+	FailedCount   uint8     `json:"failed_count"`
 }
 
 // Create a discount code
