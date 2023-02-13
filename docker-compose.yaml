@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ssh_key: ${ssh_key}
+    restart: "no"
+    entrypoint: [ "sh", "-c", "make test"]
