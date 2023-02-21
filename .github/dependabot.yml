@@ -10,9 +10,6 @@ updates:
       day: "saturday"
       time: "03:00"
       timezone: Europe/Budapest
-    ignore:
-      - dependency-name: "github.com/ghostmonitor/gm-go-internal"
-        versions: [">4.9.x"]
     open-pull-requests-limit: 1
     target-branch: master
 
