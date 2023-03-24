@@ -6,12 +6,9 @@ updates:
   - package-ecosystem: gomod
     directory: "/"
     schedule:
-      interval: daily
+      interval: "daily"
       time: "03:00"
       timezone: Europe/Budapest
-    ignore:
-      - dependency-name: "github.com/ghostmonitor/gm-go-internal"
-        versions: [">4.9.x"]
-    open-pull-requests-limit: 15
+    open-pull-requests-limit: 10
     target-branch: master
 
