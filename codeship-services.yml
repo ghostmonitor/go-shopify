@@ -1,4 +1,0 @@
-app:
-  build:
-    dockerfile: Dockerfile
-    encrypted_args_file: ssh.key.encrypted
