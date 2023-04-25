@@ -18,8 +18,8 @@ parameters:
 commands:
 jobs:
   test:
-    machine:
-      image: ubuntu-2204:2022.10.2
+    docker:
+      - image: cimg/aws:2023.04
     resource_class: small
     steps:
       - checkout
