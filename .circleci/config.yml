@@ -25,8 +25,7 @@ jobs:
       - checkout
       - aws-cli/setup:
           role-arn: ${AWS_ROLE_ARN}
-      - setup_remote_docker:
-          docker_layer_caching: true
+      - setup_remote_docker
       - run:
           name: Run tests
           command: |
