@@ -33,10 +33,9 @@ if (( HELM_JOB_COUNT > 0 )); then
 fi
 
 if [[ -n "${HELM_CMD}" ]]; then
-	VALUES="${SERVICE}-${NAMESPACE}.yml"
-	echo "Download values file '${VALUES}' from S3 and ${HELM_CMD}"
+	echo "Download values file '${NAMESPACE}/${SERVICE}.yml' from S3 and ${HELM_CMD}"
 	set -e
-	aws s3 cp "s3://recart-helm-charts/values/${VALUES}" "./${VALUES}"
+	aws s3 cp "s3://recart-application-config/${NAMESPACE}/${SERVICE}.yml" "./${SERVICE}.yml"
 	set +e
 
 	# Run Helm install/upgrade
@@ -46,7 +45,7 @@ if [[ -n "${HELM_CMD}" ]]; then
 		--wait-for-jobs \
 		--version "${CHART_VERSION_NUMBER}" \
 		--namespace "${NAMESPACE}" \
-		-f "./${VALUES}" \
+		-f "./${SERVICE}.yml" \
 		--set image.tag="${TAG}" \
 		--set postInstallJob.enabled="${HELM_JOB_ENABLED}" \
 		--set ownerTeam="${OWNER_TEAM_NAME}"
