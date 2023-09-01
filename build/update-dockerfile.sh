@@ -32,7 +32,7 @@ do
 	fi
 
 	if [ "${suffix}" = "" ]; then
-		latest=$(jq -r "[.[] | select(.imageTags[] | startswith(\"${mainVersion}.\"))][0].imageTags[0] " < "base-images-${mainVersion}.json")
+		latest=$(jq -r "[.[] | select(.imageTags[] | startswith(\"${mainVersion}.\")) | select(.imageTags[] | contains(\"-\") | not)][0].imageTags[0] " < "base-images-${mainVersion}.json")
 	else
 		latest=$(jq -r "[.[] | select(.imageTags[] | startswith(\"${mainVersion}\")) | select(.imageTags[] | endswith(\"${suffix}\"))][0].imageTags[0]" < "base-images-${mainVersion}.json")
 	fi
