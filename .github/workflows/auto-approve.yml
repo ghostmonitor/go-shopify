@@ -27,6 +27,7 @@ jobs:
           github-token: ${{ secrets.DEPENDABOT_GITHUB_TOKEN }}
       - name: Enable auto-merge for Dependabot PRs
         if: |
+          (contains(steps.dependabot-metadata.outputs.dependency-type, 'development') && steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch') ||
           (contains(steps.dependabot-metadata.outputs.dependency-type, 'production') && steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch') ||
           (contains(steps.dependabot-metadata.outputs.dependency-type, 'indirect') && steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch') ||
           (contains(steps.dependabot-metadata.outputs.dependency-names, 'github.com/ghostmonitor/') && steps.dependabot-metadata.outputs.update-type == 'version-update:semver-minor') ||
