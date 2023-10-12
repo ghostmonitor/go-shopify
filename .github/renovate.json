@@ -6,6 +6,23 @@
     ":automergeMinor",
     "group:linters"
   ],
+  "hostRules": [
+    {
+      "hostType": "docker",
+      "matchHost": "281674856106.dkr.ecr.us-east-1.amazonaws.com",
+      "username": "AKIAUDFJBG2VHCZG2NO2",
+      "encypted": {
+        "password": "wcFMA/xDdHCJBTolAQ/+JnYDnrPUK99nAWZCB+Bu6ruRLl0lHm77tj2oTw9cLGKNNSmYv1yQWor2lOMoxUBTZblnlFkZyShzp1WUtB0hDVszOcbMmENQiN6jtQrStMAaJL3V4sdGnN4Xg6FjvGbtISy7ZB3sAMnKwqDbyrrWyjSDjz/dx2HLnWf8sn+mLrGRN4z/1Tmdi5NlPnmrQ6Fdz4HX/jkH4yvZoql0HgsRd/64Dm1sYTnQJorE/yOjH/7+lsfvE4qbfiGjFC7graHlmycj/lc4vjovzNwNtHvo1NZAiDJV8G6RtEsNr+2fm6JVElL8T500e+qjfwrJnREZpcZpZnQzrX1henW1/dnUTw0hxJ2ksUkuu2ICTPz7WpltVddWSQnOIRe2lsU5b5xBsSv+scwCLYpYxCfi36yH1gkY2aRvgU15cV6iaBRVEpP8RfQ4vQUyA4FbMK/5266QcqHRpPhHuQbGnOGB+2uUAZazda23iH+zyUbE/xHDNC0H15i0BGz339jjJcdqomey1AarMrzP/edfAg+LlssoiwrVLxeB4tTENycZtUaIaOEaG/1cGjrF1v5LXlE2rv7TxWbF2MioZpWT3jmysVqRrIWxm/8F6X9wvgE+qspanatSBR331Vc9MOcGR0EH279GW+4gf4WPXUGVcoO/7+1fAvHZkTTyfAChqmRCrcRZbCbSewHj9S7N2ixh7o8xpEGM7wGJiT5zfeghdC5qTIgnKqQGXGK/WlXjIuYYxj5DZZH89IHIjRgQYmMbvipKdcx5xMs5+oTH1fUzkehgLJlK2AVrhKOhV+QpMrCOOAjBXyQfk4LZ8+oxEQ9MuSuDuIHUi0/cAWvjJ9xFABZYig"
+      }
+    },
+    {
+      "hostType": "go",
+      "matchHost": "https://github.com/ghostmonitor",
+      "encrypted": {
+        "token": "wcFMA/xDdHCJBTolARAAgZvfYn1kDkHN84zEqbarQpFU4Ybvf3os8lUAG1lsgfPfCheao71QwkMOA68mV9sPwBvJOgnV5N6R4cz4awBlBt0ReSy4lsM7SUlPRZZIjcgTLy4vyLFPYDGRnDifWb1BITKl08PRfovFNYTL+U3w3abTY/NyTPfg/eX4PSKIPrtbCOkI3E/1KxtsPSfEXLNasRc4a1SW2n1+BsbhSnRK7jPwxQy0BFNcBEKIq22c0lsXEiZBYVYcCNFeveI9Ri2saic+GvEEt4BaJXTkd4QJcjhTxRoHWJW98VTZQTlYDjw8Qwc4q/fiMVmeXrEIXQhfR4lCAkuJZayfvtjGNjRGnxkYFrL/7ED8hGn/dpuY25Wj7n3vZ4Q46koGjVWt96yMM4XWUr2Xp99tXJvxCwX/cOt53GqNaQGZfV/EysLXHs7fdQTkXWq5hC530Si69w0zZIiA4ofG6T1tzeRII7XrIVrzqfdxCw3OwEdTBt6v3I90drPmL1dHswxKCaZvfXDofdK7LXGFxvBgoxRJdX4qnrKWKvY2Is/NWFKCr1S186bZzB4fnAGPn7Eg0A7rC9qFjnlCw8uIJdlbs/6xXp8WUDgKnvIAHkxy3ALl25ys5P6GU3oOf/4wIUSc/HHMd9RhYwA9yb5Q7MIP2STC1xeuT7SKvvnSqUTVoubz6qcyKIPSewFXeBgnORtJgJDkeazcJ1MjSD/04EeUtUo3vH28m/sxXjosp8KGlNJc/aoIQkVDLnSygwkKFjoi5HLjIMTx83zBXi5gQ7KtdGo7UGOf8lcyJIbdmFmJ7/kBrBAr2VKPqJUUZVJgm0LUHjp3nLR1eXOgh2/KsiuqGKTTVg"
+      }
+    }
+  ],
   "packageRules": [
     {
       "matchUpdateTypes": [
@@ -15,15 +32,6 @@
         "digest"
       ],
       "automerge": true
-    }
-  ],
-  "hostRules": [
-    {
-      "matchHost": "https://github.com/ghostmonitor",
-      "hostType": "go",
-      "encrypted": {
-        "token": "wcFMA/xDdHCJBTolARAAgZvfYn1kDkHN84zEqbarQpFU4Ybvf3os8lUAG1lsgfPfCheao71QwkMOA68mV9sPwBvJOgnV5N6R4cz4awBlBt0ReSy4lsM7SUlPRZZIjcgTLy4vyLFPYDGRnDifWb1BITKl08PRfovFNYTL+U3w3abTY/NyTPfg/eX4PSKIPrtbCOkI3E/1KxtsPSfEXLNasRc4a1SW2n1+BsbhSnRK7jPwxQy0BFNcBEKIq22c0lsXEiZBYVYcCNFeveI9Ri2saic+GvEEt4BaJXTkd4QJcjhTxRoHWJW98VTZQTlYDjw8Qwc4q/fiMVmeXrEIXQhfR4lCAkuJZayfvtjGNjRGnxkYFrL/7ED8hGn/dpuY25Wj7n3vZ4Q46koGjVWt96yMM4XWUr2Xp99tXJvxCwX/cOt53GqNaQGZfV/EysLXHs7fdQTkXWq5hC530Si69w0zZIiA4ofG6T1tzeRII7XrIVrzqfdxCw3OwEdTBt6v3I90drPmL1dHswxKCaZvfXDofdK7LXGFxvBgoxRJdX4qnrKWKvY2Is/NWFKCr1S186bZzB4fnAGPn7Eg0A7rC9qFjnlCw8uIJdlbs/6xXp8WUDgKnvIAHkxy3ALl25ys5P6GU3oOf/4wIUSc/HHMd9RhYwA9yb5Q7MIP2STC1xeuT7SKvvnSqUTVoubz6qcyKIPSewFXeBgnORtJgJDkeazcJ1MjSD/04EeUtUo3vH28m/sxXjosp8KGlNJc/aoIQkVDLnSygwkKFjoi5HLjIMTx83zBXi5gQ7KtdGo7UGOf8lcyJIbdmFmJ7/kBrBAr2VKPqJUUZVJgm0LUHjp3nLR1eXOgh2/KsiuqGKTTVg"
-      }
     }
   ],
   "postUpdateOptions": [
