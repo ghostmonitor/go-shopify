@@ -4,7 +4,8 @@
     "config:base",
     ":automergeDisabled",
     ":automergeMinor",
-    "group:linters"
+    "group:linters",
+    "schedule:automergeNonOfficeHours"
   ],
   "hostRules": [
     {
