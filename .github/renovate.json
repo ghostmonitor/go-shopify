@@ -5,7 +5,9 @@
     ":automergeDisabled",
     ":automergeMinor",
     "group:linters",
-    "schedule:automergeNonOfficeHours"
+    "schedule:automergeNonOfficeHours",
+    "schedule:nonOfficeHours",
+    "docker:disable"
   ],
   "hostRules": [
     {
