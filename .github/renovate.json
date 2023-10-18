@@ -27,6 +27,7 @@
   "lockFileMaintenance": {
     "enabled": false
   },
+  "timezone": "Europe/Budapest",
   "packageRules": [
     {
       "matchUpdateTypes": [
