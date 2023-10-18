@@ -24,6 +24,9 @@
       }
     }
   ],
+  "lockFileMaintenance": {
+    "enabled": false
+  },
   "packageRules": [
     {
       "matchUpdateTypes": [
