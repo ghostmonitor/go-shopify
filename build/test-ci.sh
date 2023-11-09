@@ -11,5 +11,5 @@ fi
 if [ "${AWS_ECR_LOGIN}" = "1" ]; then 
 	aws ecr get-login-password --region "${REGION}" | docker login --username AWS --password-stdin "${REGISTRY_ID}.dkr.ecr.${REGION}.amazonaws.com"
 fi
-DOCKER_BUILDKIT=0 docker compose up --abort-on-container-exit --build
+DOCKER_BUILDKIT=0 MONGO_HOSTNAME=${MONGO_HOSTNAME:-mongo-rs} docker compose up --abort-on-container-exit --build
 
