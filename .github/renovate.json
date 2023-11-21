@@ -3,7 +3,6 @@
   "extends": [
     "config:base",
     ":automergeDisabled",
-    ":automergeMinor",
     "group:linters",
     "schedule:automergeNonOfficeHours",
     "schedule:nonOfficeHours",
@@ -48,6 +47,7 @@
     "**/scripts/**"
   ],
   "timezone": "Europe/Budapest",
+  "updateNotScheduled": false,
   "packageRules": [
     {
       "matchUpdateTypes": [
@@ -56,9 +56,10 @@
         "pin",
         "digest"
       ],
-      "automerge": true
+      "automerge": false
     }
   ],
+  "enabled": false,
   "postUpdateOptions": [
     "gomodTidy"
   ]
