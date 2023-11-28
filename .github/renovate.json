@@ -3,6 +3,7 @@
   "extends": [
     "config:base",
     ":automergeDisabled",
+    ":automergeMinor",
     "group:linters",
     "schedule:automergeNonOfficeHours",
     "schedule:nonOfficeHours",
@@ -56,10 +57,9 @@
         "pin",
         "digest"
       ],
-      "automerge": false
+      "automerge": true
     }
   ],
-  "enabled": false,
   "postUpdateOptions": [
     "gomodTidy"
   ]
