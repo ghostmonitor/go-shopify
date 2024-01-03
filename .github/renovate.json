@@ -19,17 +19,17 @@
       }
     },
     {
-      "hostType": "go",
       "matchHost": "https://github.com/ghostmonitor",
+      "hostType": "go",
       "encrypted": {
-        "token": "wcFMA/xDdHCJBTolARAAgZvfYn1kDkHN84zEqbarQpFU4Ybvf3os8lUAG1lsgfPfCheao71QwkMOA68mV9sPwBvJOgnV5N6R4cz4awBlBt0ReSy4lsM7SUlPRZZIjcgTLy4vyLFPYDGRnDifWb1BITKl08PRfovFNYTL+U3w3abTY/NyTPfg/eX4PSKIPrtbCOkI3E/1KxtsPSfEXLNasRc4a1SW2n1+BsbhSnRK7jPwxQy0BFNcBEKIq22c0lsXEiZBYVYcCNFeveI9Ri2saic+GvEEt4BaJXTkd4QJcjhTxRoHWJW98VTZQTlYDjw8Qwc4q/fiMVmeXrEIXQhfR4lCAkuJZayfvtjGNjRGnxkYFrL/7ED8hGn/dpuY25Wj7n3vZ4Q46koGjVWt96yMM4XWUr2Xp99tXJvxCwX/cOt53GqNaQGZfV/EysLXHs7fdQTkXWq5hC530Si69w0zZIiA4ofG6T1tzeRII7XrIVrzqfdxCw3OwEdTBt6v3I90drPmL1dHswxKCaZvfXDofdK7LXGFxvBgoxRJdX4qnrKWKvY2Is/NWFKCr1S186bZzB4fnAGPn7Eg0A7rC9qFjnlCw8uIJdlbs/6xXp8WUDgKnvIAHkxy3ALl25ys5P6GU3oOf/4wIUSc/HHMd9RhYwA9yb5Q7MIP2STC1xeuT7SKvvnSqUTVoubz6qcyKIPSewFXeBgnORtJgJDkeazcJ1MjSD/04EeUtUo3vH28m/sxXjosp8KGlNJc/aoIQkVDLnSygwkKFjoi5HLjIMTx83zBXi5gQ7KtdGo7UGOf8lcyJIbdmFmJ7/kBrBAr2VKPqJUUZVJgm0LUHjp3nLR1eXOgh2/KsiuqGKTTVg"
+        "token": "wcFMA/xDdHCJBTolAQ/+MeaFIklePXxytL9xjEsOlxwrJ3EU2DsHE11SWgNWbGAkgkJ8I33LdCRNj7JFGa6nnfR6Zg0xYtx0fGzP2IGmKzi/MkfrX6PYeoHoW9jm/QtEEm4379rFoftSSUskA1ARDUi9lmywDBb7QkjzD3FGJewu8+je+OTGnVe595jeJgb+jGNgz8He1eCFgjsMwU2lB+G3k6/qUoRiWs/DP6EfHhUmRin7NIPDi+MX3NBivltuqlhjCzQ93ClBbYDM3K1y7LChHrOP65ou066w4nF5b1myDdRsLQEiM73/9600TXr5QCLUN+T7nGlb8bcNMLMi+R9Npf8rC9IkUYFWCx4OPbJbxorzoUiLo7LTURVwZtdMmbBauIV2FuSgub9PCLwqDuJGi2FsOrwzAwV2ceABwUDwpoOVvpnjHuTWoAO3SfiSst1Cg3BaubB/+C5AWZGhrWwvoSIvguYHx+JtTFrYOYpKMcA0cVPU/z+cwxudovQe01stbA9vy8uYJ3UG0qgb+KyLLSGa3WRJZe1uwFisT/H77+b6dxE87hKrA02wFcSwARtbalTN5NNYPMbeOVWmOsb/lms91L8AfYr6BusfTz+t4mHkIGhq5Z7VEQ6VIy9mykKYWGfXxAAztO2KZYX3EHeFDeZC/E8ETh/sSpxeNIv0/23Bl1O2eA4nYq2slZTSewHnplBzBOV3uHBh8lc+F3C8rFTf3AXrfd+Q1ki0XJsS0W8hXXIabglVckh71jEa1GGk2GrWxQq2nhXy86YEI0aecNe5D0LpRgk5gsu7OBCHC5EKXC8ceBYUh9DMIw+npM06TfR8fDOL8B2SiefGIeqTv+tqqXDcq1iQzA"
       }
     },
     {
-      "matchHost": "github.com",
+      "matchHost": "https://api.github.com/repos/ghostmonitor",
       "hostType": "github",
       "encrypted": {
-        "token": "wcFMA/xDdHCJBTolARAAgZvfYn1kDkHN84zEqbarQpFU4Ybvf3os8lUAG1lsgfPfCheao71QwkMOA68mV9sPwBvJOgnV5N6R4cz4awBlBt0ReSy4lsM7SUlPRZZIjcgTLy4vyLFPYDGRnDifWb1BITKl08PRfovFNYTL+U3w3abTY/NyTPfg/eX4PSKIPrtbCOkI3E/1KxtsPSfEXLNasRc4a1SW2n1+BsbhSnRK7jPwxQy0BFNcBEKIq22c0lsXEiZBYVYcCNFeveI9Ri2saic+GvEEt4BaJXTkd4QJcjhTxRoHWJW98VTZQTlYDjw8Qwc4q/fiMVmeXrEIXQhfR4lCAkuJZayfvtjGNjRGnxkYFrL/7ED8hGn/dpuY25Wj7n3vZ4Q46koGjVWt96yMM4XWUr2Xp99tXJvxCwX/cOt53GqNaQGZfV/EysLXHs7fdQTkXWq5hC530Si69w0zZIiA4ofG6T1tzeRII7XrIVrzqfdxCw3OwEdTBt6v3I90drPmL1dHswxKCaZvfXDofdK7LXGFxvBgoxRJdX4qnrKWKvY2Is/NWFKCr1S186bZzB4fnAGPn7Eg0A7rC9qFjnlCw8uIJdlbs/6xXp8WUDgKnvIAHkxy3ALl25ys5P6GU3oOf/4wIUSc/HHMd9RhYwA9yb5Q7MIP2STC1xeuT7SKvvnSqUTVoubz6qcyKIPSewFXeBgnORtJgJDkeazcJ1MjSD/04EeUtUo3vH28m/sxXjosp8KGlNJc/aoIQkVDLnSygwkKFjoi5HLjIMTx83zBXi5gQ7KtdGo7UGOf8lcyJIbdmFmJ7/kBrBAr2VKPqJUUZVJgm0LUHjp3nLR1eXOgh2/KsiuqGKTTVg"
+        "token": "wcFMA/xDdHCJBTolAQ/+MeaFIklePXxytL9xjEsOlxwrJ3EU2DsHE11SWgNWbGAkgkJ8I33LdCRNj7JFGa6nnfR6Zg0xYtx0fGzP2IGmKzi/MkfrX6PYeoHoW9jm/QtEEm4379rFoftSSUskA1ARDUi9lmywDBb7QkjzD3FGJewu8+je+OTGnVe595jeJgb+jGNgz8He1eCFgjsMwU2lB+G3k6/qUoRiWs/DP6EfHhUmRin7NIPDi+MX3NBivltuqlhjCzQ93ClBbYDM3K1y7LChHrOP65ou066w4nF5b1myDdRsLQEiM73/9600TXr5QCLUN+T7nGlb8bcNMLMi+R9Npf8rC9IkUYFWCx4OPbJbxorzoUiLo7LTURVwZtdMmbBauIV2FuSgub9PCLwqDuJGi2FsOrwzAwV2ceABwUDwpoOVvpnjHuTWoAO3SfiSst1Cg3BaubB/+C5AWZGhrWwvoSIvguYHx+JtTFrYOYpKMcA0cVPU/z+cwxudovQe01stbA9vy8uYJ3UG0qgb+KyLLSGa3WRJZe1uwFisT/H77+b6dxE87hKrA02wFcSwARtbalTN5NNYPMbeOVWmOsb/lms91L8AfYr6BusfTz+t4mHkIGhq5Z7VEQ6VIy9mykKYWGfXxAAztO2KZYX3EHeFDeZC/E8ETh/sSpxeNIv0/23Bl1O2eA4nYq2slZTSewHnplBzBOV3uHBh8lc+F3C8rFTf3AXrfd+Q1ki0XJsS0W8hXXIabglVckh71jEa1GGk2GrWxQq2nhXy86YEI0aecNe5D0LpRgk5gsu7OBCHC5EKXC8ceBYUh9DMIw+npM06TfR8fDOL8B2SiefGIeqTv+tqqXDcq1iQzA"
       }
     }
   ],
@@ -60,6 +60,12 @@
       "automerge": true
     }
   ],
+  "customEnvVariables": {
+    "GOPRIVATE": "github.com/ghostmonitor/*",
+    "GONOSUMDB": "github.com/ghostmonitor/*",
+    "GONOPROXY": "github.com/ghostmonitor/*",
+    "GOPROXY": "direct"
+  },
   "postUpdateOptions": [
     "gomodTidy"
   ]
