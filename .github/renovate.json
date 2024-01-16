@@ -36,6 +36,7 @@
   "lockFileMaintenance": {
     "enabled": false
   },
+  "rangeStrategy": "pin",
   "ignorePaths": [
     "**/node_modules/**",
     "**/bower_components/**",
