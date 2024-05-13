@@ -37,6 +37,7 @@
     "enabled": false
   },
   "rangeStrategy": "pin",
+  "ignoreDeps": [],
   "ignorePaths": [
     "**/node_modules/**",
     "**/bower_components/**",
