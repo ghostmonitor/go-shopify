@@ -29,10 +29,7 @@
     {
       "matchHost": "https://api.github.com/repos/ghostmonitor",
       "hostType": "github",
-      "token": "{{ secrets.GHOSTMONITOR_GITHUB_TOKEN }}",
-      "encrypted": {
-        "token": "wcFMA/xDdHCJBTolAQ/+MeaFIklePXxytL9xjEsOlxwrJ3EU2DsHE11SWgNWbGAkgkJ8I33LdCRNj7JFGa6nnfR6Zg0xYtx0fGzP2IGmKzi/MkfrX6PYeoHoW9jm/QtEEm4379rFoftSSUskA1ARDUi9lmywDBb7QkjzD3FGJewu8+je+OTGnVe595jeJgb+jGNgz8He1eCFgjsMwU2lB+G3k6/qUoRiWs/DP6EfHhUmRin7NIPDi+MX3NBivltuqlhjCzQ93ClBbYDM3K1y7LChHrOP65ou066w4nF5b1myDdRsLQEiM73/9600TXr5QCLUN+T7nGlb8bcNMLMi+R9Npf8rC9IkUYFWCx4OPbJbxorzoUiLo7LTURVwZtdMmbBauIV2FuSgub9PCLwqDuJGi2FsOrwzAwV2ceABwUDwpoOVvpnjHuTWoAO3SfiSst1Cg3BaubB/+C5AWZGhrWwvoSIvguYHx+JtTFrYOYpKMcA0cVPU/z+cwxudovQe01stbA9vy8uYJ3UG0qgb+KyLLSGa3WRJZe1uwFisT/H77+b6dxE87hKrA02wFcSwARtbalTN5NNYPMbeOVWmOsb/lms91L8AfYr6BusfTz+t4mHkIGhq5Z7VEQ6VIy9mykKYWGfXxAAztO2KZYX3EHeFDeZC/E8ETh/sSpxeNIv0/23Bl1O2eA4nYq2slZTSewHnplBzBOV3uHBh8lc+F3C8rFTf3AXrfd+Q1ki0XJsS0W8hXXIabglVckh71jEa1GGk2GrWxQq2nhXy86YEI0aecNe5D0LpRgk5gsu7OBCHC5EKXC8ceBYUh9DMIw+npM06TfR8fDOL8B2SiefGIeqTv+tqqXDcq1iQzA"
-      }
+      "token": "{{ secrets.GHOSTMONITOR_GITHUB_TOKEN }}"
     }
   ],
   "lockFileMaintenance": {
