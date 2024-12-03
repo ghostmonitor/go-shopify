@@ -9,7 +9,6 @@
     "schedule:nonOfficeHours",
     "docker:disable"
   ],
-  "enabled": false,
   "hostRules": [
     {
       "hostType": "docker",
