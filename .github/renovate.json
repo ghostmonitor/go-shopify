@@ -11,20 +11,9 @@
   ],
   "hostRules": [
     {
-      "hostType": "docker",
-      "matchHost": "281674856106.dkr.ecr.us-east-1.amazonaws.com",
-      "username": "AKIAUDFJBG2VHCZG2NO2",
-      "encrypted": {
-        "password": "wcFMA/xDdHCJBTolAQ/+JnYDnrPUK99nAWZCB+Bu6ruRLl0lHm77tj2oTw9cLGKNNSmYv1yQWor2lOMoxUBTZblnlFkZyShzp1WUtB0hDVszOcbMmENQiN6jtQrStMAaJL3V4sdGnN4Xg6FjvGbtISy7ZB3sAMnKwqDbyrrWyjSDjz/dx2HLnWf8sn+mLrGRN4z/1Tmdi5NlPnmrQ6Fdz4HX/jkH4yvZoql0HgsRd/64Dm1sYTnQJorE/yOjH/7+lsfvE4qbfiGjFC7graHlmycj/lc4vjovzNwNtHvo1NZAiDJV8G6RtEsNr+2fm6JVElL8T500e+qjfwrJnREZpcZpZnQzrX1henW1/dnUTw0hxJ2ksUkuu2ICTPz7WpltVddWSQnOIRe2lsU5b5xBsSv+scwCLYpYxCfi36yH1gkY2aRvgU15cV6iaBRVEpP8RfQ4vQUyA4FbMK/5266QcqHRpPhHuQbGnOGB+2uUAZazda23iH+zyUbE/xHDNC0H15i0BGz339jjJcdqomey1AarMrzP/edfAg+LlssoiwrVLxeB4tTENycZtUaIaOEaG/1cGjrF1v5LXlE2rv7TxWbF2MioZpWT3jmysVqRrIWxm/8F6X9wvgE+qspanatSBR331Vc9MOcGR0EH279GW+4gf4WPXUGVcoO/7+1fAvHZkTTyfAChqmRCrcRZbCbSewHj9S7N2ixh7o8xpEGM7wGJiT5zfeghdC5qTIgnKqQGXGK/WlXjIuYYxj5DZZH89IHIjRgQYmMbvipKdcx5xMs5+oTH1fUzkehgLJlK2AVrhKOhV+QpMrCOOAjBXyQfk4LZ8+oxEQ9MuSuDuIHUi0/cAWvjJ9xFABZYig"
-      }
-    },
-    {
       "matchHost": "https://github.com/ghostmonitor",
       "hostType": "go",
-      "token": "{{ secrets.GHOSTMONITOR_GITHUB_TOKEN }}",
-      "encrypted": {
-        "token": "wcFMA/xDdHCJBTolAQ/+MeaFIklePXxytL9xjEsOlxwrJ3EU2DsHE11SWgNWbGAkgkJ8I33LdCRNj7JFGa6nnfR6Zg0xYtx0fGzP2IGmKzi/MkfrX6PYeoHoW9jm/QtEEm4379rFoftSSUskA1ARDUi9lmywDBb7QkjzD3FGJewu8+je+OTGnVe595jeJgb+jGNgz8He1eCFgjsMwU2lB+G3k6/qUoRiWs/DP6EfHhUmRin7NIPDi+MX3NBivltuqlhjCzQ93ClBbYDM3K1y7LChHrOP65ou066w4nF5b1myDdRsLQEiM73/9600TXr5QCLUN+T7nGlb8bcNMLMi+R9Npf8rC9IkUYFWCx4OPbJbxorzoUiLo7LTURVwZtdMmbBauIV2FuSgub9PCLwqDuJGi2FsOrwzAwV2ceABwUDwpoOVvpnjHuTWoAO3SfiSst1Cg3BaubB/+C5AWZGhrWwvoSIvguYHx+JtTFrYOYpKMcA0cVPU/z+cwxudovQe01stbA9vy8uYJ3UG0qgb+KyLLSGa3WRJZe1uwFisT/H77+b6dxE87hKrA02wFcSwARtbalTN5NNYPMbeOVWmOsb/lms91L8AfYr6BusfTz+t4mHkIGhq5Z7VEQ6VIy9mykKYWGfXxAAztO2KZYX3EHeFDeZC/E8ETh/sSpxeNIv0/23Bl1O2eA4nYq2slZTSewHnplBzBOV3uHBh8lc+F3C8rFTf3AXrfd+Q1ki0XJsS0W8hXXIabglVckh71jEa1GGk2GrWxQq2nhXy86YEI0aecNe5D0LpRgk5gsu7OBCHC5EKXC8ceBYUh9DMIw+npM06TfR8fDOL8B2SiefGIeqTv+tqqXDcq1iQzA"
-      }
+      "token": "{{ secrets.GHOSTMONITOR_GITHUB_TOKEN }}"
     },
     {
       "matchHost": "https://api.github.com/repos/ghostmonitor",
