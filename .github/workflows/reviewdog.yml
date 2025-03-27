@@ -18,3 +18,5 @@ jobs:
         run: git config --global url."https://${TOKEN}@github.com".insteadOf "https://github.com"
       - name: golangci-lint
         uses: reviewdog/action-golangci-lint@v2
+        with:
+          golangci_lint_version: v1.64.8
