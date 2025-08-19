@@ -1,9 +1,6 @@
 run:
     timeout: 5m
 
-service:
-  golangci-lint-version: 1.44.2
-
 linters:
   disable-all: true
   enable:
