@@ -9,6 +9,7 @@
     "schedule:nonOfficeHours",
     "docker:disable"
   ],
+  "enabled": false,
   "hostRules": [
     {
       "matchHost": "https://github.com/ghostmonitor",
