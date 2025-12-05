@@ -47,7 +47,8 @@
         "pin",
         "digest"
       ],
-      "automerge": true
+      "automerge": true,
+      "minimumReleaseAge": "14 days"
     }
   ],
   "customEnvVariables": {
