@@ -7,9 +7,15 @@
     "group:linters",
     "schedule:automergeNonOfficeHours",
     "schedule:nonOfficeHours",
-    "docker:disable"
+    "docker:disable",
+    "group:definitelyTyped"
   ],
   "hostRules": [
+    {
+      "hostType": "npm",
+      "matchHost": "registry.npmjs.org",
+      "token": "{{ secrets.NPM_READ_TOKEN }}"
+    },
     {
       "matchHost": "https://github.com/ghostmonitor",
       "hostType": "go",
@@ -25,7 +31,13 @@
     "enabled": false
   },
   "rangeStrategy": "pin",
-  "ignoreDeps": [],
+  "ignoreDeps": [
+    "dd-trace",
+    "microbundle",
+    "node",
+    "@ghostmonitor/lib-worker",
+    "ua-parser-js"
+  ],
   "ignorePaths": [
     "**/node_modules/**",
     "**/bower_components/**",
@@ -49,9 +61,49 @@
       ],
       "automerge": true,
       "minimumReleaseAge": "14 days"
+    },
+    {
+      "matchPackagePatterns": [
+        "react"
+      ],
+      "groupName": "react packages"
+    },
+    {
+      "matchPackagePatterns": [
+        "^@ghostmonitor/lib-"
+      ],
+      "groupName": "recart-modules"
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true
+    },
+    {
+      "matchPackageNames": [
+        "@ghostmonitor/**"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true,
+      "minimumReleaseAge": null
     }
   ],
-  "customEnvVariables": {
+  "npmToken": "{{ secrets.NPM_READ_TOKEN }}",
+  "env": {
     "GOPRIVATE": "github.com/ghostmonitor/*",
     "GONOSUMDB": "github.com/ghostmonitor/*",
     "GONOPROXY": "github.com/ghostmonitor/*",
