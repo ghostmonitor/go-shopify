@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/scripts/update-recart-plugins.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Bash(git pull:*)",
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git status:*)",
+      "Bash(git branch:*)",
+      "Bash(git stash:*)",
+      "Bash(git worktree:*)",
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(npm install *)",
+      "Bash(npm ci *)",
+      "mcp__notion__notion-search",
+      "mcp__notion__notion-fetch",
+      "mcp__notion__notion-get-teams",
+      "mcp__notion__notion-get-users",
+      "mcp__notion__notion-get-self",
+      "mcp__notion__notion-get-user",
+      "mcp__notion__notion-get-comments",
+      "mcp__shortcut__stories-get-by-id",
+      "mcp__shortcut__stories-search",
+      "mcp__shortcut__stories-get-branch-name",
+      "mcp__shortcut__stories-get-by-external-link",
+      "mcp__shortcut__iterations-get-by-id",
+      "mcp__shortcut__iterations-search",
+      "mcp__shortcut__iterations-get-stories",
+      "mcp__shortcut__iterations-get-active",
+      "mcp__shortcut__iterations-get-upcoming",
+      "mcp__shortcut__epics-get-by-id",
+      "mcp__shortcut__epics-search",
+      "mcp__shortcut__objectives-get-by-id",
+      "mcp__shortcut__objectives-search",
+      "mcp__shortcut__teams-get-by-id",
+      "mcp__shortcut__teams-list",
+      "mcp__shortcut__workflows-get-by-id",
+      "mcp__shortcut__workflows-get-default",
+      "mcp__shortcut__workflows-list",
+      "mcp__shortcut__documents-list",
+      "mcp__shortcut__documents-search",
+      "mcp__shortcut__documents-get-by-id",
+      "mcp__shortcut__labels-list",
+      "mcp__shortcut__users-get-current",
+      "mcp__shortcut__users-get-current-teams",
+      "mcp__shortcut__users-list"
+    ],
+    "ask": [],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Edit(./.env)",
+      "Edit(./.env.*)",
+      "Write(./.env)",
+      "Write(./.env.*)"
+    ]
+  },
+  "extraKnownMarketplaces": {
+    "recart-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "ghostmonitor/claude-code-plugins",
+        "ref": "master"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "safety-hooks@recart-plugins": true,
+    "linter-hooks@recart-plugins": true
+  }
+}
