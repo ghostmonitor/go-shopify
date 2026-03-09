@@ -2,6 +2,8 @@
 
 *       @ghostmonitor/integrations
 
+# MCP settings are managed by github-config
+.mcp.json       @ghostmonitor/platform @recart-platform-internal
 
 # --------------
 #    WARNING
