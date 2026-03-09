@@ -86,6 +86,14 @@
       }
     }
   },
+  "enableAllProjectMcpServers": false,
+  "enabledMcpjsonServers": [
+    "shortcut",
+    "notion"
+  ],
+  "disabledMcpjsonServers": [
+    "mongodb"
+  ],
   "enabledPlugins": {
     "typescript-lsp@claude-plugins-official": true,
     "gopls-lsp@claude-plugins-official": true,
