@@ -1,5 +1,9 @@
 {
   "mcpServers": {
+    "datadog": {
+      "type": "http",
+      "url": "https://mcp.datadoghq.com/api/unstable/mcp-server/mcp"
+    },
     "notion": {
       "type": "http",
       "url": "https://mcp.notion.com/mcp"
