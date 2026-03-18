@@ -50,6 +50,7 @@
     "**/scripts/**"
   ],
   "timezone": "Europe/Budapest",
+  "platformAutomerge": false,
   "updateNotScheduled": false,
   "packageRules": [
     {
